@@ -184,7 +184,10 @@ export default Controller.extend(ModalFunctionality, {
         this.send("closeModal");
       }
 
-
+  @action
+  cancel() {
+    this.send("closeModal");
+  }
 
 
     }
