@@ -185,15 +185,15 @@ export default Controller.extend(ModalFunctionality, {
       }
 
 
-
-
-    },
-
-
   @action
   cancel() {
     this.send("closeModal");
-  },
+  }
+
+    }
+
+
+
   }
 
 });
