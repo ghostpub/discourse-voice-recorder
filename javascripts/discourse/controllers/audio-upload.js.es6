@@ -3,6 +3,7 @@ import { default as discourseComputed } from "discourse-common/utils/decorators"
 import { equal, notEmpty } from "@ember/object/computed";
 import { uploadIcon } from 'discourse/lib/uploads';
 import Controller from "@ember/controller";
+import { action } from "@ember/object";
 
 function padStart(s, l, char) {
   let n = l - String(s).length;
