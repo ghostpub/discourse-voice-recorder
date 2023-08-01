@@ -181,8 +181,16 @@ export default Controller.extend(ModalFunctionality, {
 
     closeModal() {
       if (this.state === 'idle') {
-        this.get("modal").send("closeModal");
-      }
+        this.send("closeModal");
+      },
+
+
+  @action
+  cancel() {
+    this.send("closeModal");
+  },
+
+
     }
   }
 });
